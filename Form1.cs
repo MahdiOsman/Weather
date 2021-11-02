@@ -19,7 +19,7 @@ namespace Weather
         {
             using (var httpClient = new HttpClient())
             {
-                var url = $"https://api.weatherapi.com/vX/current.json?key=cfa41a0b8eaf441fb53103144212510&q={searchValue}&aqi=no";
+                var url = $"https://api.weatherapi.com/v1/current.json?key=cfa41a0b8eaf441fb53103144212510&q={searchValue}&aqi=no";
                 var response = await httpClient.GetAsync(url);
                 var contentString = await response.Content.ReadAsStringAsync();
 

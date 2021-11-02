@@ -14,4 +14,5 @@ namespace Weather
         [JsonProperty("current")]
         public WeatherCurrent Current { get; set; }
     }
+
 }

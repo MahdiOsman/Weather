@@ -10,9 +10,9 @@ namespace Weather
     public class WeatherCurrent
     {
         [JsonProperty("temp_c")]
-        public string TempC { get; set; }
+        public double TempC { get; set; }
         [JsonProperty("temp_f")]
-        public string TempF { get; set; }
+        public double TempF { get; set; }
         [JsonProperty("condition")]
         public WeatherCondition Condition { get; set; }
     }
